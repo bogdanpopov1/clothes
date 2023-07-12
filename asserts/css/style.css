@@ -1,0 +1,491 @@
+/* default */
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #232323;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+}
+
+.logo img {
+    width: 41.67px;
+    height: 50px;
+}
+
+.logo p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 48px;
+
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav a {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #23232373;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.icons .fa-heart {
+    cursor: pointer;
+}
+
+.icons .fa-basket-shopping {
+    cursor: pointer;
+}
+
+.icons .fa-user {
+    cursor: pointer;
+}
+
+/* banner */
+
+.banner {
+    margin-top: 40px;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    position: absolute;
+    top: 80px;
+    left: 179px;
+    right: 180px;
+    bottom: 0;
+
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.banner-content h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #dadada;
+    margin-bottom: 60px;
+}
+
+.button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 66px;
+    border-radius: 4px;
+    margin-bottom: 80px;
+
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #e8e8e8;
+    font-family: Montserrat;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #d0d0d0be;
+}
+
+.banner-content .fa-chevron-down {
+    color: #e8e8e8;
+    font-size: 40px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.banner-content .fa-chevron-down:hover {
+    color: #d0d0d0be;
+}
+
+/* catalog */
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog h2 {
+    margin: 136px 0 76px 0;
+    font-weight: 600;
+    font-size: 36px;
+    margin-right: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 50px;
+}
+
+.cards .card {
+    position: relative;
+    background-color: #EDECEC;
+}
+
+.card {
+    background-color: #a7a7a7;
+    padding: 40px 80px;
+    border-radius: 4px;
+}
+
+.card .fa-heart {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: 0;
+    margin: 20px;
+    font-size: 24px;
+    color: #989898;
+    transition: all 0.3s ease-in-out;
+}
+
+.card .fa-heart:hover {
+    color: red;
+}
+
+.card img {
+    width: 100%;
+}
+
+.cards .card-content {
+    display: flex;
+    margin-top: 46px;
+    flex-direction: column;
+    gap: 36px;
+    text-align: left;
+}
+
+.card h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card button {
+    padding: 17px 60px;
+    background-color: #232323;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+
+    color: #dadada;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Montserrat;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+    background-color: #bebebe;
+    color: #232323;
+}
+
+.catalog .cat-but {
+    padding: 17px 60px;
+    background-color: #232323;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+
+    margin-top: 90px;
+
+    color: #dadada;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Montserrat;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.catalog .cat-but:hover {
+    background-color: #bebebe;
+    color: #232323;
+
+}
+
+/* popular-catalog */
+
+.popular-catalog h2 {
+    margin: 136px 0 96px 0;
+    font-weight: 600;
+    font-size: 36px;
+    margin-right: auto;
+}
+
+.popular-cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    gap: 20px;
+}
+
+.popular-cards .card {
+    position: relative;
+    background-color: #EDECEC;
+    padding: 40px 90px;
+    border-radius: 8px;
+}
+
+.popular-cards .card .fa-heart {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+
+    margin: 30px;
+
+    font-size: 24px;
+    color: #989898;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.popular-cards .card .fa-heart:hover {
+    color: red;
+}
+
+.popular-cartds .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.popular-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    text-align: left;
+
+    margin-top: 46px;
+}
+
+.popular-cards .cart-content h4 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #232323;
+}
+
+.popular-cards .card-content p {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.popular-cards .card-content button {
+    border: none;
+    outline: none;
+    background-color: #232323;
+    color: #dadada;
+    padding: 17px 60px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.popular-cards .card-content button:hover {
+    background-color: #bebebe;
+    color: #232323;
+}
+
+.popular-cards .fa-chevron-down {
+    position: absolute;
+    top: 300px;
+    bottom: 1000px;
+    left: auto;
+    right: 5px;
+
+    font-size: 48px;
+    color: #232323;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.popular-cards .fa-chevron-down:hover {
+    color: #444444de;
+}
+
+/* partners */
+
+.partners {
+    position: relative;
+    width: 95%;
+}
+.partners h2 {
+    margin: 136px 0 96px 0;
+    font-weight: 600;
+    font-size: 36px;
+    margin-right: auto;
+}
+
+.partners-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 124px;
+} 
+
+
+.partners .fa-chevron-down {
+    position: absolute;
+    top: 180px;
+    bottom: 50px;
+    left: auto;
+    right: -60px;
+
+    font-size: 48px;
+    color: #232323;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.partners .fa-chevron-down:hover {
+    color: #444444de;
+}
+
+/* mailing */
+
+.banner-mailing {
+    position: relative;
+    border-radius: 4px;
+    margin: 136px 0;
+    text-align: center;
+}
+
+.banner-mailing img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-mailing h2 {
+    color: #dadada;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 96px;
+}
+
+.miling-content {
+    position: absolute;
+    top: 48px;
+    bottom: 0;
+    right: 18px;
+    left: 18px;
+}
+
+.sub-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.sub-email input {
+    outline: none;
+    border: none;
+    padding: 16px 332px 16px 25px;
+    background-color: transparent;
+
+    border-radius: 4px;
+    border: solid #dadada 3px;
+}
+
+.sub-email button {
+    outline: none;
+    border: none;
+    padding: 16px 82px;
+    border-radius: 4px;
+
+    font-size: 18px;
+    text-align: center;
+    font-family: montserrat;
+}
