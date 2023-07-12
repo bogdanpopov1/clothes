@@ -118,8 +118,8 @@ a {
 
     position: absolute;
     top: 80px;
-    left: 179px;
-    right: 180px;
+    left: 129px;
+    right: 130px;
     bottom: 0;
 
     text-align: center;
@@ -173,6 +173,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .catalog h2 {
@@ -286,6 +287,13 @@ a {
 
 /* popular-catalog */
 
+.popular-catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .popular-catalog h2 {
     margin: 136px 0 96px 0;
     font-weight: 600;
@@ -345,7 +353,7 @@ a {
     margin-top: 46px;
 }
 
-.popular-cards .cart-content h4 {
+.popular-cards .card-content h4 {
     font-weight: 500;
     font-size: 18px;
     color: #232323;
@@ -408,6 +416,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     gap: 124px;
 } 
@@ -415,10 +424,10 @@ a {
 
 .partners .fa-chevron-down {
     position: absolute;
-    top: 180px;
+    top: 185px;
     bottom: 50px;
     left: auto;
-    right: -60px;
+    right: -57px;
 
     font-size: 48px;
     color: #232323;
@@ -449,15 +458,17 @@ a {
     color: #dadada;
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 96px;
+    margin-bottom: 90px;
 }
 
 .miling-content {
     position: absolute;
     top: 48px;
     bottom: 0;
-    right: 18px;
-    left: 18px;
+    right: 60px;
+    left: 0;
+
+    padding: 0 50px;
 }
 
 .sub-email {
@@ -466,26 +477,656 @@ a {
     justify-content: center;
     align-items: center;
 
-    gap: 12px;
+    gap: 75px;
 }
 
 .sub-email input {
+    width: 50%;
     outline: none;
     border: none;
-    padding: 16px 332px 16px 25px;
+    padding: 10px 0 14px 25px;
     background-color: transparent;
+
+    color: #dadada;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
 
     border-radius: 4px;
     border: solid #dadada 3px;
 }
 
 .sub-email button {
+    width: 50%;
     outline: none;
     border: none;
-    padding: 16px 82px;
+    padding: 21px 90px;
     border-radius: 4px;
 
-    font-size: 18px;
+    background-color: #5E5E5E;
+    color: #dadada;
     text-align: center;
-    font-family: montserrat;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub-email button:hover {
+    background-color: #232323ac;
+}
+
+.sub-email input::placeholder {
+    color: #5E5E5E;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: #9C9C9C;
+    padding-bottom: 60px;
+}
+
+.f-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 68px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 96px;
+    
+}
+
+.f-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.f-nav a {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: 6px 0;
+}
+
+.f-help a {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: 6px 0;
+}
+
+.f-contacts p {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: 6px 0;
+}
+
+
+.f-sites i {
+    font-size: 32px;
+    margin-right: 12px;
+
+}
+
+.f-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+}
+
+.f-logo img {
+    width: 41.67px;
+    height: 50px;
+}
+
+.f-logo p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* 1024 */
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    .container h2 {
+        font-size: 30px;
+    }
+
+    .header {
+        padding: 50px 0 0 0;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .banner-content h3 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #dadada;
+        margin-bottom: 50px;
+    }
+    
+    .button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 13px 56px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    
+        font-weight: 600;
+        font-size: 16px;
+        background-color: #e8e8e8;
+        font-family: Montserrat;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .banner-content {
+        position: absolute;
+        top: 80px;
+        left: 79px;
+        right: 80px;
+        bottom: 0;
+    
+        text-align: center;
+    }
+
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .popular-catalog {
+        position: relative;
+    }
+
+    .popular-cards .card:first-child {
+        display: none;
+    }
+
+    .popular-cards .fa-chevron-down {
+        font-size: 30px;
+    }
+
+    .partners-img img:nth-last-child(1) {
+        display: none;
+    }
+    .partners-img img:nth-last-child(2) {
+        display: none;
+    }
+
+    .partners .fa-chevron-down {
+        font-size: 30px;
+    }
+
+    .banner-mailing h2 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .sub-email {
+        gap: 45px;
+    }
+    
+    .sub-email input {
+        padding: 12px 0 14px 25px;
+        font-size: 14px;
+        border: solid #dadada 2px;
+    }
+    
+    .sub-email button {
+        padding: 15px 60px;
+        font-size: 14px;
+    }
+
+    .sub-email input::placeholder {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding-bottom: 30px;
+    }
+    
+    .f-content {
+        padding: 30px 0 0px 0px;
+        gap: 60px;
+        
+    }
+    
+    .f-content h3 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .f-nav a {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+    
+    .f-help a {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+    
+    .f-contacts p {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+    
+    
+    .f-sites i {
+        font-size: 24px;
+        margin-right: 12px;
+    }
+    
+    .f-logo {
+        gap: 6px;
+    }
+    
+    .f-logo img {
+        width: 31.67px;
+        height: 40px;
+    }
+    
+    .f-logo p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        gap: 6px;
+    }
+    
+    .logo img {
+        width: 21.67px;
+        height: 25px;
+    }
+    
+    .logo p {
+        font-size: 10px;
+    }
+
+    .nav {
+        gap: 30px;
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 50px;
+        margin-bottom: -69px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .banner-content h1 {
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+    .banner-content h3 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .button {
+        padding: 5px 26px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        font-size: 10px;
+        background-color: #e8e8e8;
+        font-family: Montserrat;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .banner-content {
+        position: absolute;
+        top: 30px;
+        left: 79px;
+        right: 80px;
+        bottom: 0;
+    
+        text-align: center;
+    }
+
+    .banner-content .fa-chevron-down {
+        font-size: 20px;
+    }
+
+    .popular-cards .card:nth-last-child(2) {
+        display: none;
+    }
+
+    .partners-img {
+        gap: 10px;
+        margin-bottom: -px;
+    } 
+    .partners-img img {
+        width: 48px;
+    }
+    .partners .fa-chevron-down {
+        font-size: 24px;
+        top: 150px;
+        bottom: 50px;
+        left: auto;
+        right: -37px;
+    }
+
+    .banner-mailing h2 {
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+
+    .sub-email {
+        gap: 45px;
+    }
+    
+    .sub-email input {
+        padding: 8px 0 10px 12px;
+        font-size: 10px;
+        border: solid #dadada 1px;
+    }
+    
+    .sub-email button {
+        padding: 10px 30px;
+        font-size: 10px;
+    }
+
+    .sub-email input::placeholder {
+        font-size: 8px;
+    }
+
+    .miling-content {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        right: 50px;
+        left: 0;
+    
+        padding: 0 50px;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
+    
+    .f-content {
+        padding: 20px 0 0px 0px;
+        gap: 60px;
+        
+    }
+    
+    .f-content h3 {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    
+    .f-nav a {
+        font-size: 8px;
+        padding: 6px 0;
+    }
+    
+    .f-help a {
+        font-size: 8px;
+        padding: 6px 0;
+    }
+    
+    .f-contacts p {
+        font-size: 8px;
+        padding: 6px 0;
+    }
+    
+    
+    .f-sites i {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    .f-logo {
+        gap: 6px;
+    }
+    
+    .f-logo img {
+        width: 21.67px;
+        height: 25px;
+    }
+    
+    .f-logo p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        gap: 6px;
+    }
+    
+    .logo img {
+        width: 21.67px;
+        height: 25px;
+    }
+    
+    .logo p {
+        font-size: 8px;
+    }
+
+    .nav {
+        gap: 30px;
+        font-size: 8px;
+        flex-direction: column;
+    }
+
+    .header .icons .fa-heart , .fa-basket-shopping , .fa-user{
+        font-size: 8px;
+        margin-right: -1000px;
+    }
+
+    .container {
+        max-width: 425px;
+        margin: 0 auto;
+        padding: 0 20px;
+        margin-bottom: -40px;
+    }
+
+    .container h2 {
+        font-size: 12px;
+        margin: 30px auto 20px 0;
+    }
+
+    .banner-content h1 {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .banner-content h3 {
+        font-size: 6px;
+        margin-bottom: 10px;
+    }
+    
+    .button {
+        padding: 3px 13px;
+        border-radius: 4px;
+        margin-bottom: 0;
+        font-size: 6px;
+    }
+
+    .banner-content {
+        position: absolute;
+        top: 30px;
+        left: 79px;
+        right: 80px;
+        bottom: 0;
+    }
+
+    .banner-content .fa-chevron-down {
+        font-size: 20px;
+    }
+
+    .popular-cards .card:nth-last-child(2) {
+        display: none;
+    }
+
+    .partners-img {
+        gap: 10px;
+        margin-bottom: -px;
+    } 
+    .partners-img img {
+        width: 48px;
+    }
+    .partners .fa-chevron-down {
+        font-size: 24px;
+        top: 150px;
+        bottom: 50px;
+        left: auto;
+        right: -37px;
+    }
+
+    .banner-mailing h2 {
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+
+    .sub-email {
+        gap: 45px;
+    }
+    
+    .sub-email input {
+        padding: 8px 0 10px 12px;
+        font-size: 10px;
+        border: solid #dadada 1px;
+    }
+    
+    .sub-email button {
+        padding: 10px 30px;
+        font-size: 10px;
+    }
+
+    .sub-email input::placeholder {
+        font-size: 8px;
+    }
+
+    .miling-content {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        right: 50px;
+        left: 0;
+    
+        padding: 0 50px;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
+    
+    .f-content {
+        padding: 20px 0 0px 0px;
+        gap: 60px;
+        
+    }
+    
+    .f-content h3 {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    
+    .f-nav a {
+        font-size: 8px;
+        padding: 6px 0;
+    }
+    
+    .f-help a {
+        font-size: 8px;
+        padding: 6px 0;
+    }
+    
+    .f-contacts p {
+        font-size: 8px;
+        padding: 6px 0;
+    }
+    
+    
+    .f-sites i {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    .f-logo {
+        gap: 6px;
+    }
+    
+    .f-logo img {
+        width: 21.67px;
+        height: 25px;
+    }
+    
+    .f-logo p {
+        font-size: 10px;
+    }
+
+    .cards .card-content {
+        margin-top: 23px;
+        gap: 18px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+    }
+    
+    .card p {
+        font-size: 16px;
+    }
+    
+    .card button {
+        padding: 10px 50px;
+        font-size: 14px;
+    }
+
+    .popular-cards .card-content {
+        gap: 18px;
+        margin-top: 23px;
+    }
+    
+    .popular-cards .card-content h4 {
+        font-size: 14px;
+    }
+    
+    .popular-cards .card-content p {
+        font-size: 16px;
+    }
+    
+    .popular-cards .card-content button {
+        padding: 10px 50px;
+    }
 }
