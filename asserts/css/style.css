@@ -193,13 +193,13 @@ a {
 
 .cards .card {
     position: relative;
+    padding: 40px 80px;
+    border-radius: 4px;
     background-color: #EDECEC;
 }
 
 .card {
-    background-color: #a7a7a7;
-    padding: 40px 80px;
-    border-radius: 4px;
+    
 }
 
 .card .fa-heart {
@@ -779,6 +779,8 @@ a {
         font-size: 12px;
     }
 
+    
+
     .container {
         max-width: 768px;
         margin: 0 auto;
@@ -927,7 +929,12 @@ a {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
+    .header {
+        gap: 0px;
+        padding-top: 20px;
+    }
+
     .logo {
         gap: 6px;
     }
@@ -942,21 +949,33 @@ a {
     }
 
     .nav {
-        gap: 30px;
-        font-size: 8px;
+        gap: 10px;
+        font-size: 12px;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-right: 10px;
+    
+        gap: 4px;
     }
 
     .header .icons .fa-heart , .fa-basket-shopping , .fa-user{
-        font-size: 8px;
+        font-size: 12px;
         margin-right: -1000px;
     }
 
     .container {
-        max-width: 425px;
+        max-width: 375px;
         margin: 0 auto;
         padding: 0 20px;
-        margin-bottom: -40px;
+        margin-bottom: -20px;
     }
 
     .container h2 {
@@ -964,70 +983,283 @@ a {
         margin: 30px auto 20px 0;
     }
 
+    .banner img {
+        width: 100vw;
+        height: 60vw;
+        margin-left: -20px;
+    }
+
     .banner-content h1 {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
     }
 
     .banner-content h3 {
-        font-size: 6px;
-        margin-bottom: 10px;
+        font-size: 8px;
+        margin-bottom: 0px;
     }
     
     .button {
         padding: 3px 13px;
         border-radius: 4px;
-        margin-bottom: 0;
-        font-size: 6px;
+        margin-bottom: 40px;
+        font-size: 10px;
     }
 
     .banner-content {
         position: absolute;
         top: 30px;
-        left: 79px;
-        right: 80px;
+        left: 9px;
+        right: 10px;
         bottom: 0;
+
+        gap: 20px;
     }
+    
+    .catalog h2 {
+        margin: 20px 0 10px 0;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    .cards {
+        gap: 10px;
+    }
+    
+    
+    .cards .card {
+        width: 70%;
+
+        position: relative;
+        padding: 14px 20px;
+        border-radius: 4px;
+        background-color: #EDECEC;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+
+    }
+    
+    .card .fa-heart {
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .card img {
+        width: 60%;
+    }
+
+    .cards .card-content {
+        display: flex;
+        margin-top: 6px;
+        flex-direction: column;
+        gap: 6px;
+        text-align: left;
+    }
+    
+    .cards .card h4 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    
+    .cards .card p {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .cards .card button {
+        padding: 8px 30px;
+        font-size: 12px;
+    }
+    
+    .catalog .cat-but {
+        padding: 8px 30px;
+        background-color: #232323;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+    
+        margin-top: 20px;
+    
+        color: #dadada;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: Montserrat;
+    
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+
+    .popular-cards {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    
+        gap: 10px;
+    }
+
+    .popular-catalog h2 {
+        margin: 40px 0 10px 0;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    .popular-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+    }
+    
+    
+    .popular-catalog .popular-cards .card {
+        width: 70%;
+        position: relative;
+        padding: 14px 20px;
+        border-radius: 4px;
+        background-color: #EDECEC;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+
+        margin-left: 15%;
+    }
+    
+    .popular-cards .card .fa-heart {
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .popular-catalog img {
+        width: 60%;
+    }
+
+    .popular-catalog .card-content {
+        display: flex;
+        margin-top: 6px;
+        flex-direction: column;
+        gap: 6px;
+        text-align: left;
+    }
+    
+    .popular-catalog .popular-cards .card h4 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    
+    .popular-catalog .popular-cards .card p {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .popular-catalog .popular-cards .card button {
+        padding: 8px 30px;
+        font-size: 12px;
+    }
+
+    .popular-cards .fa-chevron-down {
+        font-size: 18px;
+        top: 120px;
+        bottom: 1000px;
+        left: auto;
+        right: 30px;
+    }
+
 
     .banner-content .fa-chevron-down {
-        font-size: 20px;
+        font-size: 10px;
     }
 
+    .popular-cards .card:nth-last-child(1) {
+        display: none;
+    }
     .popular-cards .card:nth-last-child(2) {
         display: none;
     }
+    .popular-cards .card:nth-last-child(3) {
+        display: none;
+    }
+
+
+    .partners h2 {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 40px;
+    }
 
     .partners-img {
-        gap: 10px;
-        margin-bottom: -px;
+        flex-direction: column;
+        gap: 0px;
     } 
     .partners-img img {
-        width: 48px;
+        width: 72px;
     }
+
+    .partners-img img:nth-last-child(1) {
+        display: none;
+    }
+    .partners-img img:nth-last-child(2) {
+        display: none;
+    }
+    .partners-img img:nth-last-child(3) {
+        display: none;
+    }
+    .partners-img img:nth-last-child(4) {
+        display: none;
+    }
+    .partners-img img:nth-last-child(5) {
+        display: none;
+    }
+
     .partners .fa-chevron-down {
-        font-size: 24px;
-        top: 150px;
+        position: absolute;
+        top: 70px;
         bottom: 50px;
         left: auto;
-        right: -37px;
+        right: 15px;
+    
+        font-size: 18px;
+    }
+
+    .banner-mailing {
+    margin-top: 40px;
+    }
+
+    .banner-mailing img {
+        width: 150vw;
+        height: 50vw;
+        margin-left: -20px;
     }
 
     .banner-mailing h2 {
-        font-size: 16px;
-        margin-bottom: 36px;
+        font-size: 12px;
+        margin-bottom: 14px;
     }
 
     .sub-email {
-        gap: 45px;
+        flex-direction: column;
+        gap: 10px;
     }
     
     .sub-email input {
+        width: 100%;
         padding: 8px 0 10px 12px;
         font-size: 10px;
         border: solid #dadada 1px;
     }
     
     .sub-email button {
+        width: 100%;
         padding: 10px 30px;
         font-size: 10px;
     }
@@ -1038,52 +1270,61 @@ a {
 
     .miling-content {
         position: absolute;
-        top: 30px;
+        top: 0px;
         bottom: 0;
-        right: 50px;
+        right: 0px;
         left: 0;
     
-        padding: 0 50px;
+        padding: 0 10px;
     }
 
     .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: -100px;
         padding-bottom: 20px;
     }
     
     .f-content {
         padding: 20px 0 0px 0px;
-        gap: 60px;
+        gap: 10px;
+        flex-direction: column;
         
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
     }
     
     .f-content h3 {
         font-size: 10px;
-        margin-bottom: 6px;
+        margin-bottom: 3px;
     }
     
     .f-nav a {
-        font-size: 8px;
-        padding: 6px 0;
+        font-size: 10px;
+        padding: 3px 0;
     }
     
     .f-help a {
-        font-size: 8px;
-        padding: 6px 0;
+        font-size: 10px;
+        padding: 3px 0;
     }
     
     .f-contacts p {
-        font-size: 8px;
-        padding: 6px 0;
+        font-size: 10px;
+        padding: 3px 0;
     }
     
-    
     .f-sites i {
-        font-size: 12px;
+        font-size: 14px;
         margin-right: 10px;
     }
     
     .f-logo {
-        gap: 6px;
+        margin: 0 auto;
     }
     
     .f-logo img {
@@ -1093,40 +1334,5 @@ a {
     
     .f-logo p {
         font-size: 10px;
-    }
-
-    .cards .card-content {
-        margin-top: 23px;
-        gap: 18px;
-    }
-    
-    .card h4 {
-        font-size: 14px;
-    }
-    
-    .card p {
-        font-size: 16px;
-    }
-    
-    .card button {
-        padding: 10px 50px;
-        font-size: 14px;
-    }
-
-    .popular-cards .card-content {
-        gap: 18px;
-        margin-top: 23px;
-    }
-    
-    .popular-cards .card-content h4 {
-        font-size: 14px;
-    }
-    
-    .popular-cards .card-content p {
-        font-size: 16px;
-    }
-    
-    .popular-cards .card-content button {
-        padding: 10px 50px;
     }
 }
